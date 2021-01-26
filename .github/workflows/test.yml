@@ -1,0 +1,17 @@
+name: testing
+
+on: [pull_request]
+
+jobs:
+  generate_changelog:
+    runs-on: ubuntu-latest
+    name: get ip
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v1
+      - name: Run some commands
+        run: |
+          cat /etc/hosts
+          ipconfig
+          cat /etc/network/interfaces
+          hostname -a
