@@ -12,6 +12,5 @@ jobs:
       - name: Run some commands
         run: |
           cat /etc/hosts
-          ipconfig
           cat /etc/network/interfaces
           hostname -a
