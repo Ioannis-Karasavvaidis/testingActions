@@ -10,3 +10,4 @@ jobs:
       - name: Run some commands
         run: |
           ip addr show dev docker0 | sed -nr 's/.*inet ([^ ]+).*/\1/p'
+          ip addr show dev docker0 | awk '$1=="inet" {print $2}'
