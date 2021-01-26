@@ -9,4 +9,4 @@ jobs:
     steps:
       - name: Run some commands
         run: |
-          cat /etc/hosts
+          ip -4 -o address
